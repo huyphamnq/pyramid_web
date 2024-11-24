@@ -35,7 +35,7 @@
     }
 
     .section-title2 {
-        font-size: 4.4rem;
+        font-size: 2rem;
         text-transform: uppercase;
         width: 100%;
         padding: 0 60px;
@@ -54,12 +54,16 @@
         display: none;
     }
 
+    .nav-logo a {
+        font-size: 1.6rem;
+    }
+
     .nav-item a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .menu-item a {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .btn-close {
@@ -125,7 +129,14 @@
     .cta a {
         font-size: 1.2rem;
     }
-}
+
+    .section2 img {
+        height: 540px;
+    }
+
+    .timeline-title {
+        height: 50px;
+    }
 
 @media screen and (max-width: 1366px) {
     #pyramid {
