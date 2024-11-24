@@ -1,0 +1,42 @@
+@media screen and (max-width: 600px) {
+    .timeline {
+        margin: 50px auto;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-content {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    
+    .text-box {
+        font-size: 1.3rem;
+    }
+
+    .text-box small {
+        margin-top: 10px;
+    }
+
+    .right-timeline-content {
+        left: 0;
+    }
+
+    .right-timeline-content img, .left-timeline-content img {
+        left: 10px;
+    }
+
+    .right-timeline-content-arrow, .left-timeline-content-arrow {
+        border-right: 15px solid #333;
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #pyramid {
+        margin-top: 180px;
+    }
+}
