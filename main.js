@@ -16,6 +16,24 @@ function off() {
     }, 500); // Thời gian trùng với thời gian transition của CSS
 }
 
+function on1() {
+    const overlay2 = document.getElementById("overlay2");
+    overlay2.style.display = "block"; // Hiển thị overlay ngay lập tức
+    setTimeout(() => {
+        overlay2.classList.add("show"); // Thêm lớp "show" để bắt đầu hiệu ứng
+    }, 10); // Thêm lớp "show" sau một thời gian ngắn để hiệu ứng được kích hoạt
+}
+
+function off1() {
+    const overlay2 = document.getElementById("overlay2");
+    overlay2.classList.remove("show"); // Loại bỏ lớp "show" khi đóng overlay
+    overlay2.classList.add("hide"); // Thêm lớp "hide" để bắt đầu hiệu ứng đóng
+    setTimeout(() => {
+        overlay2.style.display = "none"; // Ẩn đi overlay2 sau khi hiệu ứng đóng hoàn tất
+        overlay2.classList.remove("hide"); // Loại bỏ lớp "hide"
+    }, 500); // Thời gian trùng với thời gian transition của CSS
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector('.nav');
   

@@ -137,6 +137,21 @@
     .timeline-title {
         height: 50px;
     }
+    .overlay2-title {
+        display: none;
+    }
+    .overlay2-content {
+        flex-direction: column;
+        padding: 100px 20px;
+    }
+    .contact-text {
+        width: 100%;
+    }
+    .contact-input {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
 
 @media screen and (max-width: 1366px) {
     #pyramid {

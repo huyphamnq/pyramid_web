@@ -135,7 +135,7 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
+#overlay2,
 #overlay {
     background-color: #80775C;
     position: fixed;
@@ -149,13 +149,13 @@ body {
     transform: translateY(-100%);
     transition: opacity 0.3s ease, transform 0.5s ease;
 }
-
+#overlay2.show,
 #overlay.show {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
-
+#overlay2.hide,
 #overlay.hide {
     opacity: 0;
     transform: translateY(-100%);
@@ -665,3 +665,80 @@ body {
     animation-range: entry 0% cover 40%;
 }
 
+.overlay2-title {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    color: #574A24;
+    padding: 20px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 200px; */
+    /* margin-top: 200px; */
+    width: 50%;
+}
+
+.contact-text h2 {
+    font-size: 2.4rem;
+    color: #fff;
+    font-family: 500;
+    line-height: 4rem;
+}
+
+.contact-social {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 2.8rem;
+}
+
+
+.contact-social i {
+    margin-right: 16px;
+}
+
+.contact-social i:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-input input {
+    height: 42px;
+    margin-bottom: 10px;
+    padding: 6px;
+    border: 1px solid #583434;
+}
+
+.contact-input input:last-child {
+    margin-top: 0px;
+}
+
+.overlay2-content {
+    display: flex;
+    padding: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-send {
+    padding: 12px;
+    outline: none;
+    border: none;
+    background-color: #574A24;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-send:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
